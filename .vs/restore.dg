@@ -1,0 +1,6 @@
+#:C:\Estudo\DDD_ESTUDO\src\WebSite\WebSite.xproj
+C:\Estudo\DDD_ESTUDO\src\WebSite\WebSite.xproj|C:\Estudo\DDD_ESTUDO\src\Application\Application.xproj
+C:\Estudo\DDD_ESTUDO\src\WebSite\WebSite.xproj|C:\Estudo\DDD_ESTUDO\src\Domain\Domain.xproj
+C:\Estudo\DDD_ESTUDO\src\WebSite\WebSite.xproj|C:\Estudo\DDD_ESTUDO\src\Infra\Infra.xproj
+C:\Estudo\DDD_ESTUDO\src\Application\Application.xproj|C:\Estudo\DDD_ESTUDO\src\Domain\Domain.xproj
+C:\Estudo\DDD_ESTUDO\src\Infra\Infra.xproj|C:\Estudo\DDD_ESTUDO\src\Domain\Domain.xproj

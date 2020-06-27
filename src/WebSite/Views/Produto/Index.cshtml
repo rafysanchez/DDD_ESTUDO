@@ -1,0 +1,57 @@
+﻿@model IEnumerable<WebSite.Models.ProdutoModel>
+
+<h3>@ViewData["Title"]</h3>
+
+
+<form asp-action="Index">
+    <div class="form-horizontal">
+        @Html.ActionLink("Novo Registro", "Create", "Produto")
+        <hr />
+
+        <div class="x_content">
+            <table id="datatable-buttons" class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                <th>
+                    Ações
+                </th>
+                <th>
+                    código
+                </th>
+                <th>
+                    Nome Produto
+                </th>
+
+                </tr>
+                </thead>
+                <tbody>
+                    @Html.AntiForgeryToken()
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.ActionLink("Editar", "Edit", "Produto", new { @id = item.Id })
+
+                                @Html.ActionLink("Deletar", "Delete", "Produto", new { @id = item.Id })
+                            </td>
+
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Id)
+                            </td>
+
+                            <td>
+                                @Html.DisplayFor(modelItem => item.NomeProduto)
+                            </td>
+
+                        </tr>
+                    }
+
+                </tbody>
+
+            </table>
+        </div>
+
+    </div>
+
+</form>
